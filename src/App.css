@@ -1,0 +1,77 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f7;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin: 0.5rem 0;
+}
+
+h3 {
+  color: #2c3e50;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn-get, .btn-stop {
+  background-color: #3498db; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 28px; /* Adjusted padding for better spacing */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Get it to line up nicely */
+  font-size: 16px; /* Increase font size */
+  margin: 12px 6px; /* Add some margins */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+  transition-duration: 0.3s; /* Smooth transition */
+  width: 200px; /* Fixed width for buttons */
+}
+
+.btn-get:hover, .btn-stop:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  color: white; /* White text on hover */
+  border: 2px solid #3498db; /* Add a border on hover */
+}
+
+@media screen and (max-width: 768px) {
+  #root {
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .btn-get, .btn-stop {
+    padding: 10px 20px;
+    width: 100%; /* Full width buttons on mobile */
+    margin-top: 10px;
+  }
+}
